@@ -8,7 +8,8 @@ public abstract class BaseTower : MonoBehaviour
     protected int id = -1;
     protected string tName;
     protected Coordinate tPos;
-    protected float maxHealth = 20;
+    protected int currHealth = 20;
+    protected int maxHealth = 20;
 
     protected int tickRate = 1;
     private int currentTick = 0;
@@ -34,6 +35,19 @@ public abstract class BaseTower : MonoBehaviour
         id = towerID;
         tName = towerName;
         tPos = pos;
+    }
+
+    // returns true if dead
+    public virtual bool TakeDamage(int dmg)
+    {
+        currHealth -= dmg;
+        return IsDead();
+    }
+
+    // returns true if dead
+    public bool IsDead()
+    {
+        return currHealth <= 0;
     }
 
     public string GetSlug()

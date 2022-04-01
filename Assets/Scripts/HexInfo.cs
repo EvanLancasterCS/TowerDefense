@@ -28,6 +28,21 @@ public class HexInfo : MonoBehaviour
         tower = t;
     }
 
+    // deals damage to tower if has one
+    public void TakeDamage(int dmg)
+    {
+        if(tower != null)
+        {
+            bool dead = tower.TakeDamage(dmg);
+            if(dead)
+            {
+                Coordinate mC = new Coordinate(x, z);
+                Coordinate cP = mC.GetChunkPos();
+                ChunkManager.instance.GetChunkAt(cP).DestroyTower(mC);
+            }
+        }
+    }
+
     public BaseTower GetTower()
     {
         return tower;
@@ -50,19 +65,5 @@ public class HexInfo : MonoBehaviour
     public void setMouseover(bool mouse)
     {
         mouseoverVisual.SetActive(mouse);
-
-        if (mouse == true)
-        {
-            if(t != null)
-                StopCoroutine(t);
-            t = StartCoroutine(test());
-        }
-    }
-
-    private Coroutine t;
-    public IEnumerator test()
-    {
-        yield return new WaitForSeconds(0.1f);
-        mouseoverVisual.SetActive(false);
     }
 }

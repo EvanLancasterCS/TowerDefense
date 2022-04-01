@@ -177,12 +177,12 @@ public class InputHandler : MonoBehaviour
             info.setMouseover(true);
             mouseOverX = x;
             mouseOverZ = z;
-
+            
             if (towerCreationID != -1)
             {
                 ghostObj.SetActive(true);
                 ghostObj.transform.position = info.transform.position;
-
+                
                 if (info.IsOccupied())
                     ghostObj.GetComponent<Renderer>().material.color = unavailColor;
                 else

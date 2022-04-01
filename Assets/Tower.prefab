@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8498213244876574394}
   - component: {fileID: 8498213244876574397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TowerCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8498213245934303354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

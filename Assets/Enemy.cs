@@ -9,12 +9,19 @@ public class Enemy : MonoBehaviour
     private float currentHealth;
     private List<Coordinate> path;
     private bool followPath = false;
+    private bool noPathFound = false;
     private Rigidbody myRigidbody;
     private float waypointDistance = 0.8f;
 
     private float pathUpdateTime = 0.1f; // intervals to check for if unit is stuck somewhere
     private float stuckThreshold = 0.05f; // distance required to have moved to not be stuck
-    
+
+    private float lastAttackTime = 0f;
+    private float attackSpeed = 0.5f;
+
+    private float attackRange = 1f;
+
+    private int attackDmg = 5;
 
     private bool waitingForPath = false;
 
@@ -29,17 +36,26 @@ public class Enemy : MonoBehaviour
     public void Update()
     {
         UpdatePath();
+        Vector3 baseLoc = ChunkManager.instance.GetBaseLocation().GetGamePos();
 
-        if(followPath && path != null)
+        // Follow path if there is a path found; if no path found, move towards goal and attack
+        // Don't move if there's a path available, but we dont want to move
+        if (followPath && path != null)
         {
             MoveTowards(path[0].GetGamePos());
+        }
+        else if (noPathFound)
+        {
+            MoveTowards(baseLoc);
+
+            AttemptAttackFront();
         }
         else
         {
             StopMoving();
         }
 
-        if (Vector3.Distance(transform.position, ChunkManager.instance.GetBaseLocation().GetGamePos()) < 2f)
+        if (Vector3.Distance(transform.position, baseLoc) < 1.5f)
             Destroy(gameObject);
     }
 
@@ -63,11 +79,27 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    // Raycasts forwards to check if tower exists, attacks if so
+    public void AttemptAttackFront()
+    {
+        if (Time.time - lastAttackTime > attackSpeed)
+        {
+            RaycastHit hit;
+            int mask = 0x01 << 6; // mask for tower only layer
+            if (Physics.Raycast(transform.position, transform.forward, out hit, attackRange, mask))
+            {
+                HexInfo hex = hit.transform.parent.parent.GetComponent<HexInfo>(); // collider is the child of tower obj who is the child of the hex
+                hex.TakeDamage(attackDmg);
+                lastAttackTime = Time.time;
+            }
+        }
+    }
+
     // Raycasts downwards to find hex tile underneath, returns coordinate of that hex
     public Coordinate GetCurrentPos()
     {
         RaycastHit hit;
-        int mask = 0x01 << 3;
+        int mask = 0x01 << 3; // mask for hex only layer
         if(Physics.Raycast(transform.position, -Vector3.up, out hit, 50f, mask))
         {
             if(hit.transform != null)
@@ -95,6 +127,7 @@ public class Enemy : MonoBehaviour
     {
         if(success)
         {
+            noPathFound = false;
             path = null;
 
             _path.Reverse();
@@ -118,6 +151,12 @@ public class Enemy : MonoBehaviour
             UpdatePath();
             followPath = true;
             waitingForPath = false;
+        }
+        else
+        {
+            noPathFound = true;
+            followPath = false;
+            path = null;
         }
     }
 

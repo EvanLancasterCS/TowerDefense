@@ -36,4 +36,10 @@ public class TowerManager : MonoBehaviour
             print("Error: coordinate for tower creation isn't loaded");
         }
     }
+
+    public void DestroyTower(Coordinate c)
+    {
+        Coordinate cPos = c.GetChunkPos();
+        ChunkManager.instance.GetChunkAt(c).DestroyTower(cPos);
+    }
 }

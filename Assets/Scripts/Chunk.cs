@@ -70,6 +70,31 @@ public class Chunk
         }
     }
 
+    public void DestroyTower(Coordinate c)
+    {
+        HexInfo hex = GetHex(c);
+        if(hex != null)
+        {
+            BaseTower t = hex.GetTower();
+            int i = myTowers.IndexOf(t);
+            if (t != null && i != -1)
+            {
+                GameObject tObj = t.gameObject;
+                GameObject.Destroy(tObj);
+                myTowers.RemoveAt(i);
+                hex.SetTower(null);
+            }
+            else
+            {
+                Debug.Log("Error: hex does not have a tower for DestroyTower, or tower was not found in this chunk");
+            }
+        }
+        else
+        {
+            Debug.Log("Error: hex not found for DestroyTower");
+        }
+    }
+
     // Returns the hex at x, z; turns into local coords. returns null if not in this chunk
     public HexInfo GetHex(int x, int z)
     {
