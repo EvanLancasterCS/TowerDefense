@@ -23,7 +23,6 @@ MonoBehaviour:
     height: 947
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_MinSize: {x: 679, y: 471}
   m_MaxSize: {x: 14001, y: 14021}
   vertical: 0
@@ -33,13 +32,10 @@ MonoBehaviour:
   controlID: 12224
 >>>>>>> 3e8b8c47eee6038d6ce84784cee141d2118a6160
 =======
-=======
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
   controlID: 388
-<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
   m_MinSize: {x: 679, y: 471}
@@ -51,8 +47,6 @@ MonoBehaviour:
   controlID: 12224
 >>>>>>> 3e8b8c47eee6038d6ce84784cee141d2118a6160
 >>>>>>> mergedbranch
-=======
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +159,6 @@ MonoBehaviour:
     height: 947
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_MinSize: {x: 403, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
@@ -175,13 +168,10 @@ MonoBehaviour:
   controlID: 12225
 >>>>>>> 3e8b8c47eee6038d6ce84784cee141d2118a6160
 =======
-=======
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 389
-<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
   m_MinSize: {x: 403, y: 471}
@@ -193,8 +183,6 @@ MonoBehaviour:
   controlID: 12225
 >>>>>>> 3e8b8c47eee6038d6ce84784cee141d2118a6160
 >>>>>>> mergedbranch
-=======
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +210,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> mergedbranch
   controlID: 46
@@ -235,9 +222,6 @@ MonoBehaviour:
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
-=======
-  controlID: 390
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,15 +243,10 @@ MonoBehaviour:
     height: 568
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> mergedbranch
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-=======
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -309,7 +288,6 @@ MonoBehaviour:
       m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       m_ExpandedIDs: fcf9ffff
 =======
       m_ExpandedIDs: 6efbffff
@@ -317,9 +295,6 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: fcf9ffff
 >>>>>>> mergedbranch
-=======
-      m_ExpandedIDs: 6efbffff
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -581,7 +556,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> mergedbranch
     - Assets/Scripts
@@ -594,15 +568,11 @@ MonoBehaviour:
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
-=======
-    - Assets/Scripts
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -618,16 +588,12 @@ MonoBehaviour:
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
-=======
-  - Assets/Scripts
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\silve\OneDrive\Documents\GitHub\TowerDefense
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -649,11 +615,6 @@ MonoBehaviour:
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
-=======
-    m_SelectedIDs: fa3f0000
-    m_LastClickedID: 16378
-    m_ExpandedIDs: 00000000ec3f0000
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -684,7 +645,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> mergedbranch
     m_ExpandedIDs: 0000000026400000
@@ -697,9 +657,6 @@ MonoBehaviour:
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
-=======
-    m_ExpandedIDs: 00000000ec3f0000
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -727,7 +684,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> mergedbranch
     m_SelectedInstanceIDs: ca080000
@@ -743,10 +699,6 @@ MonoBehaviour:
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
-=======
-    m_SelectedInstanceIDs: ca080000
-    m_LastClickedInstanceID: 2250
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000383f000000000000
     m_RenameOverlay:
@@ -1748,13 +1700,10 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
-=======
->>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   m_LastInspectedObjectInstanceID: 2250
   m_LastVerticalScrollValue: 0
 =======
