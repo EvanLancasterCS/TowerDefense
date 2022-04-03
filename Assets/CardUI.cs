@@ -44,7 +44,7 @@ public class CardUI : MonoBehaviour
 
     private void SetTitle(string txt) { title.text = txt; }
     private void SetStats(string txt) { stats.text = txt; }
-    private void SetIcon(Sprite img) { }//icon.sprite = img; }
+    private void SetIcon(Sprite img) { }//i//con.sprite = img; }
 
     private void SetQuality(int num)
     {
