@@ -141,9 +141,12 @@ MonoBehaviour:
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
   controlID: 1431
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,9 +187,12 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 1432
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,9 +230,12 @@ MonoBehaviour:
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 1433
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -332,6 +341,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> mergedbranch
     y: 0
@@ -343,6 +353,8 @@ MonoBehaviour:
   controlID: 70
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
     y: 568
     width: 1429
     height: 379
@@ -723,9 +735,12 @@ MonoBehaviour:
     y: 641
     width: 1428
     height: 358
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -755,6 +770,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: aa560000
     m_LastClickedID: 22186
     m_ExpandedIDs: 00000000aa56000000ca9a3b
@@ -768,6 +784,11 @@ MonoBehaviour:
     m_LastClickedID: 22186
     m_ExpandedIDs: 00000000aa56000000ca9a3b
 >>>>>>> mergedbranch
+=======
+    m_SelectedIDs: fa3f0000
+    m_LastClickedID: 16378
+    m_ExpandedIDs: 00000000ec3f0000
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -797,6 +818,7 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000aa560000
 =======
     m_ExpandedIDs: 00000000ec3f0000
@@ -804,6 +826,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000aa560000
 >>>>>>> mergedbranch
+=======
+    m_ExpandedIDs: 00000000ec3f0000
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -893,9 +918,12 @@ MonoBehaviour:
     y: 641
     width: 1428
     height: 358
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 

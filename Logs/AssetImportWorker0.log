@@ -2,6 +2,7 @@ Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.25f1 (9b9180224418) revision 10195328'; Using compiler version '192528614'; Build Type 'Release'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> mergedbranch
 OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 32637 MB
@@ -11,20 +12,26 @@ COMMAND LINE ARGUMENTS:
 I:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Unity.exe
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'en' Physical Memory: 16279 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Editor\2020.3.25f1\Editor\Unity.exe
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -70,6 +77,8 @@ Domain Reload Profiling:
 		BeginReloadAssembly (46ms)
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 C:/Users/silve/OneDrive/Documents/GitHub/TowerDefense
 -logFile
 Logs/AssetImportWorker0.log
@@ -109,14 +118,18 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (723ms)
 		BeginReloadAssembly (60ms)
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -137,6 +150,8 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadMethodAttributes (21ms)
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 		EndReloadAssembly (578ms)
 			LoadAssemblies (58ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -151,15 +166,19 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (20ms)
 				ProcessInitializeOnLoadAttributes (101ms)
 				ProcessInitializeOnLoadMethodAttributes (37ms)
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -212,6 +231,8 @@ Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2018.
 Total: 1.820800 ms (FindLiveObjects: 0.091600 ms CreateObjectMapping: 0.032200 ms MarkObjects: 1.678800 ms  DeleteObjects: 0.017100 ms)
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 Registered in 0.008651 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -258,9 +279,12 @@ System memory in use after: 162.2 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2018.
 Total: 2.612600 ms (FindLiveObjects: 0.120600 ms CreateObjectMapping: 0.041100 ms MarkObjects: 2.432500 ms  DeleteObjects: 0.017500 ms)
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -271,16 +295,21 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -338,6 +367,8 @@ Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2020.
 Total: 1.653600 ms (FindLiveObjects: 0.082200 ms CreateObjectMapping: 0.028600 ms MarkObjects: 1.531200 ms  DeleteObjects: 0.010800 ms)
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   path: Assets/Scripts/BaseTower.cs
   artifactKey: Guid(37138728c83ecb140a982ad8319eedcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/BaseTower.cs using Guid(37138728c83ecb140a982ad8319eedcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6855699e99188432a22f22432fefe4f3') in 0.491192 seconds 
@@ -353,9 +384,12 @@ System memory in use after: 131.4 MB.
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2018.
 Total: 2.820200 ms (FindLiveObjects: 0.214500 ms CreateObjectMapping: 0.066100 ms MarkObjects: 2.525200 ms  DeleteObjects: 0.013400 ms)
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -364,6 +398,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -609,11 +644,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+=======
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 81.887246 seconds.
   path: Assets/Enemy.prefab
   artifactKey: Guid(dab02670389d8544789ed7c42e4725c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -621,6 +660,8 @@ Start importing Assets/Enemy.prefab using Guid(dab02670389d8544789ed7c42e4725c9)
   Import took 0.041694 seconds .
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   Time since last request: 37.110338 seconds.
   path: Assets/Scripts/Chunk.cs
   artifactKey: Guid(7494d3022287ff2459282aadcff6a03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -778,13 +819,17 @@ Received Import Request.
   artifactKey: Guid(9fe90fdbe652e5a49a9342ac7f512b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/WaveManager.cs using Guid(9fe90fdbe652e5a49a9342ac7f512b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7034e035faa55a27c9c800aff571778c') in 0.003228 seconds 
   Import took 0.006000 seconds .
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -834,6 +879,8 @@ Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2039.
 Total: 1.646600 ms (FindLiveObjects: 0.079700 ms CreateObjectMapping: 0.030100 ms MarkObjects: 1.524200 ms  DeleteObjects: 0.012100 ms)
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 Registered in 0.004951 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -877,9 +924,12 @@ System memory in use after: 162.0 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2020.
 Total: 3.422800 ms (FindLiveObjects: 0.180000 ms CreateObjectMapping: 0.075400 ms MarkObjects: 3.116700 ms  DeleteObjects: 0.049700 ms)
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -890,15 +940,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1166,6 +1221,8 @@ Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2090.
 Total: 1.699700 ms (FindLiveObjects: 0.086200 ms CreateObjectMapping: 0.033900 ms MarkObjects: 1.562600 ms  DeleteObjects: 0.016400 ms)
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.006425 seconds.
@@ -1211,9 +1268,12 @@ System memory in use after: 162.1 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2022.
 Total: 2.764700 ms (FindLiveObjects: 0.135800 ms CreateObjectMapping: 0.042700 ms MarkObjects: 2.556200 ms  DeleteObjects: 0.029000 ms)
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1224,17 +1284,22 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1284,6 +1349,8 @@ Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2092.
 Total: 1.828700 ms (FindLiveObjects: 0.097700 ms CreateObjectMapping: 0.032400 ms MarkObjects: 1.687100 ms  DeleteObjects: 0.010800 ms)
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 Registered in 0.012973 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -1327,9 +1394,12 @@ System memory in use after: 162.1 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2024.
 Total: 8.373700 ms (FindLiveObjects: 0.554200 ms CreateObjectMapping: 0.191000 ms MarkObjects: 7.555900 ms  DeleteObjects: 0.068300 ms)
+<<<<<<< HEAD
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1340,11 +1410,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 =======
 >>>>>>> mergedbranch
+=======
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

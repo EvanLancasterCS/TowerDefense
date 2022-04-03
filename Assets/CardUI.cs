@@ -55,6 +55,7 @@ public class CardUI : MonoBehaviour
     private void SetStats(string txt) { stats.text = txt; }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private void SetIcon(Sprite img) { }//i//con.sprite = img; }
 =======
     private void SetIcon(Sprite img) { icon.sprite = img; }
@@ -62,6 +63,9 @@ public class CardUI : MonoBehaviour
 =======
     private void SetIcon(Sprite img) { }//i//con.sprite = img; }
 >>>>>>> mergedbranch
+=======
+    private void SetIcon(Sprite img) { icon.sprite = img; }
+>>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
 
     private void SetQuality(int num)
     {
