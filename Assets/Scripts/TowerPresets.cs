@@ -12,6 +12,33 @@ public static class TowerPresets
         new TowerHelper(2, 1, BaseTower.TowerType.Projectile, "Shotgun", new object[]{8, 1, 25f, 0f, 10f, 1f})
     };
 
+    private static int[] towerProbabilities =
+    {
+        0,
+        1,
+        1
+    };
+    private static int totalProbability = -1; // dont set this to anything
+
+    // idk the optimal way to roll but this works for small things i guess lol
+    public static int RollForTower()
+    {
+        if(totalProbability == -1)
+            for (int i = 0; i < towerProbabilities.Length; i++)
+                totalProbability += towerProbabilities[i];
+
+        int rand = Random.Range(1, totalProbability + 1);
+        int count = 0;
+        for(int i = 0; i < towerProbabilities.Length; i++)
+        {
+            if(count == rand || (count < rand && count + towerProbabilities[i] >= rand))
+                return i;
+            count += towerProbabilities[i];
+        }
+        Debug.Log("error: rolling for tower");
+        return -1;
+    }
+
     public static BaseTower.TowerType GetTowerType(int id) { return presets[id].type; }
     public static string GetTowerName(int id) { return presets[id].name; }
     public static object[] GetTowerArgs(int id) { return presets[id].args; }

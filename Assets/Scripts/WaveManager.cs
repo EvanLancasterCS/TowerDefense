@@ -66,7 +66,8 @@ public class WaveManager : MonoBehaviour
             // give player towers
             for (int i = 0; i < 3; i++)
             {
-                int index = TowerManager.instance.CreateTower(1);
+                int towerType = TowerPresets.RollForTower();
+                int index = TowerManager.instance.CreateTower(towerType);
                 BaseTower t = TowerManager.instance.GetUnplacedTower(index);
                 UIManager.instance.CreateCard(t);
             }
