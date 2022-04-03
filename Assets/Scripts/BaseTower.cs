@@ -39,6 +39,11 @@ public abstract class BaseTower : MonoBehaviour
         quality = qual;
     }
 
+    public void SetPos(Coordinate pos)
+    {
+        tPos = pos;
+    }
+
     // returns true if dead
     public virtual bool TakeDamage(int dmg)
     {

@@ -4,10 +4,7 @@ using UnityEngine;
 
 public static class TowerPresets
 {
-    // p[i][0] = towerID
-    // p[i][1] = towerType, based on enum in BaseTower
-    // p[i][2] = towerName
-    // p[i][2-end] = towerArgs
+    
     private static TowerHelper[] presets =
     {
         new TowerHelper(0, 1, BaseTower.TowerType.Home, "Home Base", null),

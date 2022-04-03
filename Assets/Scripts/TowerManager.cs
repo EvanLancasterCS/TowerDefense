@@ -41,6 +41,8 @@ public class TowerManager : MonoBehaviour
         else
             print("Error: Type isn't any tower type"); // shouldn't ever be here unless you do some weird casting
 
+        tower.SetTower(new Coordinate(5000, 5000), towerID, towerQual, towerName, towerArgs);
+
         // Request visual from resources and place in object
         GameObject visualPrefab = ResourceLoader.instance.GetTowerModel(towerID);
         GameObject.Instantiate(visualPrefab, newTower.transform);
@@ -57,12 +59,48 @@ public class TowerManager : MonoBehaviour
             {
                 bool success = ChunkManager.instance.PlaceTower(c, t);
                 if (success)
+                {
                     unplacedTowers.Remove(t);
+                    t.SetPos(c);
+                }
             }
         }
         else
         {
             print("Error: coordinate for tower creation isn't loaded");
+        }
+    }
+
+    public void DeleteUnplacedTower(int index)
+    {
+        if(index > 0 && index < unplacedTowers.Count)
+        {
+            BaseTower t = unplacedTowers[index];
+            Destroy(t.gameObject);
+            unplacedTowers.RemoveAt(index);
+        }
+    }
+
+    public void DeleteUnplacedTower(BaseTower t)
+    {
+        int i = unplacedTowers.IndexOf(t);
+        if (i != -1)
+        {
+            Destroy(t.gameObject);
+            unplacedTowers.RemoveAt(i);
+        }
+    }
+
+    public void PlaceRecentTower(Coordinate c)
+    {
+        if(unplacedTowers.Count != 0)
+        {
+            BaseTower t = unplacedTowers[unplacedTowers.Count - 1];
+            PlaceTower(c, t);
+        }
+        else
+        {
+            print("Error: no towers in unplaced towers");
         }
     }
 

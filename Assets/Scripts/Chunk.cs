@@ -23,7 +23,9 @@ public class Chunk
     public void Tick()
     {
         foreach (BaseTower t in myTowers)
+        {
             t.Tick();
+        }
     }
 
     public bool IsHexOccupied(Coordinate c)

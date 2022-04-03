@@ -151,8 +151,8 @@ public class InputHandler : MonoBehaviour
             {
                 if (!ChunkManager.instance.IsHexOccupied(x, z))
                 {
-                    int towerIndex = TowerManager.instance.CreateTower(towerCreationID);
-                    //BaseTower t = 
+                    TowerManager.instance.CreateTower(towerCreationID);
+                    TowerManager.instance.PlaceRecentTower(new Coordinate(x, z));
                 }
 
                 ClearAll();
