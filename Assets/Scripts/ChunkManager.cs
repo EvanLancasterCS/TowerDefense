@@ -57,19 +57,41 @@ public class ChunkManager : MonoBehaviour
         return GetHexAt(c.x, c.z).IsOccupied();
     }
 
-    public void CreateTower(int x, int z, int towerID, string towerName, object[] args)
+    public bool PlaceTower(Coordinate c, BaseTower t)
     {
-        CreateTower(new Coordinate(x, z), towerID, towerName, args);
+        Coordinate chunkPos = c.GetChunkPos();
+        if (IsChunkLoaded(chunkPos))
+        {
+            Chunk chunk = GetChunkAt(chunkPos);
+            return chunk.PlaceTower(c, t);
+        }
+        return false;
     }
-    public void CreateTower(Coordinate c, int towerID, string towerName, object[] args)
+
+    /*
+    public void CreateTower(int x, int z, int towerID, int qual, string towerName, object[] args)
+    {
+        CreateTower(new Coordinate(x, z), towerID, qual, towerName, args);
+    }
+    public void CreateTower(Coordinate c, int towerID, int qual, string towerName, object[] args)
     {
         Coordinate chunkPos = c.GetChunkPos();
         if(IsChunkLoaded(chunkPos))
         {
             Chunk chunk = GetChunkAt(chunkPos);
-            chunk.CreateTower(c, towerID, towerName, args);
+            chunk.CreateTower(c, towerID, qual, towerName, args);
         }
     }
+
+    public void CreateTower(Coordinate c, BaseTower t)
+    {
+        Coordinate chunkPos = c.GetChunkPos();
+        if (IsChunkLoaded(chunkPos))
+        {
+            Chunk chunk = GetChunkAt(chunkPos);
+            chunk.CreateTower(c, t);
+        }
+    }*/
 
     public HexInfo GetHexAt(int x, int z)
     {

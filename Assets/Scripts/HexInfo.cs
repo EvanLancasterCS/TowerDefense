@@ -23,9 +23,14 @@ public class HexInfo : MonoBehaviour
         mouseoverVisual.GetComponent<Renderer>().material.color = mouseoverColor;
     }
 
-    public void SetTower(BaseTower t)
+    public bool SetTower(BaseTower t)
     {
-        tower = t;
+        if (!IsOccupied())
+        {
+            tower = t;
+            return true;
+        }
+        return false;
     }
 
     // deals damage to tower if has one

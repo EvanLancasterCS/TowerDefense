@@ -149,8 +149,11 @@ public class InputHandler : MonoBehaviour
             // if creating a tower and this is what the player selects
             if (towerCreationID != -1)
             {
-                if(!ChunkManager.instance.IsHexOccupied(x, z))
-                    TowerManager.instance.CreateTower(new Coordinate(x, z), towerCreationID);
+                if (!ChunkManager.instance.IsHexOccupied(x, z))
+                {
+                    int towerIndex = TowerManager.instance.CreateTower(towerCreationID);
+                    //BaseTower t = 
+                }
 
                 ClearAll();
                 return;

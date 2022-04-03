@@ -56,23 +56,28 @@
     <Compile Include="Assets\Scripts\Chunk.cs" />
     <Compile Include="Assets\Scripts\ChunkManager.cs" />
     <Compile Include="Assets\Scripts\InputHandler.cs" />
-    <Compile Include="Assets\ExplosiveProjectileEffect.cs" />
-    <Compile Include="Assets\HomeTower.cs" />
+    <Compile Include="Assets\Scripts\ExplosiveProjectileEffect.cs" />
+    <Compile Include="Assets\Scripts\HomeTower.cs" />
     <Compile Include="Assets\Scripts\Coordinate.cs" />
+    <Compile Include="Assets\Scripts\WaveManager.cs" />
     <Compile Include="Assets\Scripts\MathHelper.cs" />
-    <Compile Include="Assets\Projectile.cs" />
-    <Compile Include="Assets\PlayerInfo.cs" />
-    <Compile Include="Assets\RequestManager.cs" />
-    <Compile Include="Assets\ProjectileEffect.cs" />
-    <Compile Include="Assets\TowerPresets.cs" />
-    <Compile Include="Assets\AStarManager.cs" />
-    <Compile Include="Assets\Enemy.cs" />
-    <Compile Include="Assets\ProjectileTower.cs" />
-    <Compile Include="Assets\BaseTower.cs" />
-    <Compile Include="Assets\TowerManager.cs" />
-    <Compile Include="Assets\ResourceLoader.cs" />
+    <Compile Include="Assets\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\PlayerInfo.cs" />
+    <Compile Include="Assets\Scripts\RequestManager.cs" />
+    <Compile Include="Assets\Scripts\ProjectileEffect.cs" />
+    <Compile Include="Assets\Scripts\TowerPresets.cs" />
+    <Compile Include="Assets\Scripts\AStarManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\ProjectileTower.cs" />
+    <Compile Include="Assets\Scripts\BaseTower.cs" />
+    <Compile Include="Assets\Scripts\TowerManager.cs" />
+    <Compile Include="Assets\Scripts\ResourceLoader.cs" />
     <Compile Include="Assets\Scripts\HexInfo.cs" />
-    <Compile Include="Assets\WaveManager.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\CardUI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Fonts\Rubber-Biscuit\express.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -674,6 +679,9 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

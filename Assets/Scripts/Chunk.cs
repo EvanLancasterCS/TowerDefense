@@ -31,12 +31,28 @@ public class Chunk
         return myHexes[c.x, c.z].IsOccupied();
     }
 
-    // Creates tower at x, z, adds to myTowers
-    public void CreateTower(int x, int z, int towerID, string towerName, object[] args)
+    public bool PlaceTower(Coordinate c, BaseTower t)
     {
-        CreateTower(new Coordinate(x, z), towerID, towerName, args);
+        HexInfo hex = GetHex(c);
+        if(hex != null)
+        {
+            Transform tTrans = t.transform;
+            tTrans.parent = hex.transform;
+            tTrans.localPosition = Vector3.zero;
+
+            myTowers.Add(t);
+            return hex.SetTower(t);
+        }
+        return false;
     }
-    public void CreateTower(Coordinate c, int towerID, string towerName, object[] args)
+
+    /*
+    // Creates tower at x, z, adds to myTowers
+    public void CreateTower(int x, int z, int towerID, int qual, string towerName, object[] args)
+    {
+        CreateTower(new Coordinate(x, z), towerID, qual, towerName, args);
+    }
+    public void CreateTower(Coordinate c, int towerID, int qual, string towerName, object[] args)
     {
         HexInfo hex = GetHex(c);
         if (hex != null)
@@ -59,7 +75,7 @@ public class Chunk
 
             if (tower != null)
             {
-                tower.SetTower(c, towerID, towerName, args);
+                tower.SetTower(c, towerID, qual, towerName, args);
                 myTowers.Add(tower);
                 GetHex(c).SetTower(tower);
             }
@@ -68,7 +84,7 @@ public class Chunk
                 Debug.Log("Error: tower type invalid");
             }
         }
-    }
+    }*/
 
     public void DestroyTower(Coordinate c)
     {
