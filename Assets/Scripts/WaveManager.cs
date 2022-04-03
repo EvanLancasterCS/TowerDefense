@@ -6,12 +6,12 @@ public class WaveManager : MonoBehaviour
 {
     public static WaveManager instance;
     public GameObject enemy; // need to add system for variations for enemies later
-    public float waveTime = 60f;
     public float buildTime = 15f;
     
     public enum Phase { wave, build };
     public Phase currentPhase = Phase.build;
     public bool playingGame = false;
+    public bool building = false;
 
     private List<GameObject> currentWave = new List<GameObject>();
 
@@ -38,6 +38,11 @@ public class WaveManager : MonoBehaviour
         }
     }
 
+    public void UI_EndBuild()
+    {
+        building = false;
+    }
+
     IEnumerator GameLoop()
     {
         yield return new WaitForSeconds(1f);
@@ -55,14 +60,24 @@ public class WaveManager : MonoBehaviour
         while (playingGame)
         {
             // starting build phase
+            building = true;
+            UIManager.instance.BeginBuild();
+
+            // give player towers
+            for (int i = 0; i < 3; i++)
+            {
+                int index = TowerManager.instance.CreateTower(1);
+                BaseTower t = TowerManager.instance.GetUnplacedTower(index);
+                UIManager.instance.CreateCard(t);
+            }
 
             time = Time.fixedTime;
             while (currentPhase == Phase.build)
             {
                 // in build phase
                 yield return null;
-                elapsed = Time.fixedTime - time;
-                if(elapsed >= buildTime)
+                //elapsed = Time.fixedTime - time;
+                if(!building)//(elapsed >= buildTime)
                     SwitchPhase(Phase.wave);
                 //print("Time Left In Build: " + (buildTime - elapsed));
             }
@@ -90,7 +105,7 @@ public class WaveManager : MonoBehaviour
                         currentWave.RemoveAt(i);
 
                 elapsed = Time.fixedTime - time;
-                if (elapsed >= waveTime || currentWave.Count == 0)
+                if (currentWave.Count == 0)
                     SwitchPhase(Phase.build);
                 //print("Time Left In Wave: " + (waveTime - elapsed) + ", Number of enemies: " + currentWave.Count);
             }

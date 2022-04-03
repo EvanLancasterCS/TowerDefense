@@ -9,8 +9,7 @@ public static class TowerPresets
     {
         new TowerHelper(0, 1, BaseTower.TowerType.Home, "Home Base", null),
         new TowerHelper(1, 1, BaseTower.TowerType.Projectile, "Archer", new object[]{1, 4, 0f, 0f, 10f, 2f}),
-        new TowerHelper(2, 1, BaseTower.TowerType.Projectile, "Shotgun", new object[]{8, 1, 25f, 0f, 10f, 1f}),
-        new TowerHelper(3, 1, BaseTower.TowerType.Projectile, "Arty", new object[]{1, 8, 0f, 0f, 20f, 1f })
+        new TowerHelper(2, 1, BaseTower.TowerType.Projectile, "Shotgun", new object[]{8, 1, 25f, 0f, 10f, 1f})
     };
 
     public static BaseTower.TowerType GetTowerType(int id) { return presets[id].type; }
