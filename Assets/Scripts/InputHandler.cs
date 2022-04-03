@@ -13,7 +13,7 @@ public class InputHandler : MonoBehaviour
     private int selectedX = int.MaxValue, selectedZ = int.MaxValue;
     private int mouseOverX = int.MaxValue, mouseOverZ = int.MaxValue;
     private bool selecting = false;
-    private BaseTower towerCreation = null;
+    private int towerCreationID = -1;
 
     public PlayerInfo player;
     public GameObject ghostObj;
@@ -40,22 +40,7 @@ public class InputHandler : MonoBehaviour
     private void CheckInput()
     {
         if (Input.GetKeyDown(KeyCode.C))
-        {
-            int index = TowerManager.instance.CreateTower(1);
-            BaseTower t = TowerManager.instance.GetUnplacedTower(index);
-            UIManager.instance.CreateCard(t);
-        }
-
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-            UIManager.instance.SelectCard(0);
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-            UIManager.instance.SelectCard(1);
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-            UIManager.instance.SelectCard(2);
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-            UIManager.instance.SelectCard(3);
-        else if (Input.GetKeyDown(KeyCode.Alpha5))
-            UIManager.instance.SelectCard(4);
+            UI_RequestTower(1);
 
 
         playerRigidbody.velocity = Vector3.zero;
@@ -116,13 +101,11 @@ public class InputHandler : MonoBehaviour
 
     private void ClearAll()
     {
-        towerCreation = null;
+        towerCreationID = -1;
         selecting = false;
         ghostObj.SetActive(false);
         ClearMouseOver();
         ClearSelected();
-
-        UIManager.instance.UnselectCard();
     }
 
     // Clears the selected variables, sets hexagons back to normal
@@ -164,13 +147,12 @@ public class InputHandler : MonoBehaviour
         else
         {
             // if creating a tower and this is what the player selects
-            if (towerCreation != null)
+            if (towerCreationID != -1)
             {
                 if (!ChunkManager.instance.IsHexOccupied(x, z))
                 {
-                    bool success = TowerManager.instance.PlaceTower(new Coordinate(x, z), towerCreation);
-                    if (success)
-                        UIManager.instance.DestroySelectedCard();
+                    TowerManager.instance.CreateTower(towerCreationID);
+                    TowerManager.instance.PlaceRecentTower(new Coordinate(x, z));
                 }
 
                 ClearAll();
@@ -199,7 +181,7 @@ public class InputHandler : MonoBehaviour
             mouseOverX = x;
             mouseOverZ = z;
             
-            if (towerCreation != null)
+            if (towerCreationID != -1)
             {
                 ghostObj.SetActive(true);
                 ghostObj.transform.position = info.transform.position;
@@ -230,9 +212,9 @@ public class InputHandler : MonoBehaviour
         return null;
     }
 
-    public void UI_RequestTower(BaseTower tower)
+    public void UI_RequestTower(int towerID)
     {
         selecting = true;
-        towerCreation = tower;
+        towerCreationID = towerID;
     }
 }

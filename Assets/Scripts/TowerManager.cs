@@ -51,7 +51,7 @@ public class TowerManager : MonoBehaviour
         return unplacedTowers.Count - 1;
     }
 
-    public bool PlaceTower(Coordinate c, BaseTower t)
+    public void PlaceTower(Coordinate c, BaseTower t)
     {
         if (ChunkManager.instance.IsPosLoaded(c))
         {
@@ -63,14 +63,12 @@ public class TowerManager : MonoBehaviour
                     unplacedTowers.Remove(t);
                     t.SetPos(c);
                 }
-                return success;
             }
         }
         else
         {
             print("Error: coordinate for tower creation isn't loaded");
         }
-        return false;
     }
 
     public void DeleteUnplacedTower(int index)
