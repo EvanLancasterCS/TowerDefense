@@ -15,18 +15,9 @@ public class CardUI : MonoBehaviour
     [SerializeField] Transform starsArea;
     [SerializeField] GameObject starPrefab;
     private BaseTower towerRef;
+    public bool entering = false;
 
     [SerializeField] EventTrigger trigger;
-
-    private void Start()
-    {
-        AddEvent(testcallback, EventTriggerType.PointerEnter);
-    }
-
-    private void testcallback(BaseTower t, CardUI u)
-    {
-        print("Called!");
-    }
 
     public void SetCard(BaseTower _towerRef)
     {
@@ -53,7 +44,7 @@ public class CardUI : MonoBehaviour
 
     private void SetTitle(string txt) { title.text = txt; }
     private void SetStats(string txt) { stats.text = txt; }
-    private void SetIcon(Sprite img) { icon.sprite = img; }
+    private void SetIcon(Sprite img) { }//icon.sprite = img; }
 
     private void SetQuality(int num)
     {
@@ -63,4 +54,6 @@ public class CardUI : MonoBehaviour
         for (int i = 0; i < num; i++)
             Instantiate(starPrefab, starsArea);
     }
+
+    public BaseTower GetTowerRef() => towerRef;
 }

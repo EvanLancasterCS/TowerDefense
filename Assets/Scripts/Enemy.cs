@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour
             StopMoving();
         }
 
-        if (Vector3.Distance(transform.position, baseLoc) < 1.5f)
+        if (Vector3.Distance(transform.position, baseLoc) < 2f)
             Destroy(gameObject);
     }
 

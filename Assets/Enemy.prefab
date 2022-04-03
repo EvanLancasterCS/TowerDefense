@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661db7cc9f73f384cbd51992bf6a21d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 500
+  maxHealth: 10
   maxSpeed: 1.5
 --- !u!135 &1381669823
 SphereCollider:
