@@ -154,7 +154,6 @@ Transform:
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 --- !u!1 &533042208
 GameObject:
@@ -473,8 +472,6 @@ CanvasRenderer:
   m_GameObject: {fileID: 625285994}
   m_CullTransparentMesh: 1
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
-=======
->>>>>>> mergedbranch
 --- !u!1 &682650452
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +778,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 --- !u!224 &840686370
 RectTransform:
@@ -1069,8 +1065,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
-=======
->>>>>>> mergedbranch
 --- !u!114 &1101081739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,21 +1242,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 200
 --- !u!1 &1417962157 stripped
-<<<<<<< HEAD
 GameObject:
   m_CorrespondingSourceObject: {fileID: 590867079574975671, guid: 59a9e5d31db8cb74080390414d634a0e, type: 3}
   m_PrefabInstance: {fileID: 7444264696962065458}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1492828330
 GameObject:
-=======
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 590867079574975671, guid: 59a9e5d31db8cb74080390414d634a0e, type: 3}
-  m_PrefabInstance: {fileID: 7444264696962065458}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1492828330
-GameObject:
->>>>>>> mergedbranch
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1407,9 +1392,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> mergedbranch
 --- !u!1001 &3344907867715191676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1495,7 +1477,6 @@ PrefabInstance:
       objectReference: {fileID: 4176343310263898268}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e9de8ce76fac94cab1131b71a1bba2, type: 3}
-<<<<<<< HEAD
 =======
   player: {fileID: 1261660852}
   ghostObj: {fileID: 4176343310263898268}
@@ -2069,8 +2050,6 @@ CanvasRenderer:
   m_GameObject: {fileID: 2069155183}
   m_CullTransparentMesh: 1
 >>>>>>> 7d2b4edd0be3c6cf6c776e0b6c8d539a3c32b74e
-=======
->>>>>>> mergedbranch
 --- !u!33 &4143494677196822328
 MeshFilter:
   m_ObjectHideFlags: 0
