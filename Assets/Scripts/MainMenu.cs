@@ -5,14 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject gui_Menu;
+    public GameObject gui_Help;
     // Start is called before the first frame update
     void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
     {
         
     }
@@ -26,12 +22,15 @@ public class MainMenu : MonoBehaviour
 
     public void showHelp()
     {
+        gui_Menu.SetActive(false);
+        gui_Help.SetActive(true);
 
     }
 
     public void showMenu()
     {
-
+        gui_Menu.SetActive(true);
+        gui_Help.SetActive(false);
     }
 
     IEnumerator SceneSwitch()
