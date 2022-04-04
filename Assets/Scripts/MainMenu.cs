@@ -19,7 +19,9 @@ public class MainMenu : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("GameScene", LoadSceneMode.Additive);
+        StartCoroutine(SceneSwitch());
+        
+        
     }
 
     public void showHelp()
@@ -30,5 +32,12 @@ public class MainMenu : MonoBehaviour
     public void showMenu()
     {
 
+    }
+
+    IEnumerator SceneSwitch()
+    {
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+        yield return null;
+        SceneManager.UnloadSceneAsync("MenuScene");
     }
 }
