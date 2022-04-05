@@ -23,9 +23,14 @@ public static class TowerPresets
     // idk the optimal way to roll but this works for small things i guess lol
     public static int RollForTower()
     {
-        if(totalProbability == -1)
+        if (totalProbability == -1)
+        {
+            totalProbability = 0;
             for (int i = 0; i < towerProbabilities.Length; i++)
+            {
                 totalProbability += towerProbabilities[i];
+            }
+        }
 
         int rand = Random.Range(1, totalProbability + 1);
         int count = 0;
