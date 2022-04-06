@@ -8,13 +8,15 @@ public static class TowerPresets
     private static TowerHelper[] presets =
     {
         new TowerHelper(0, 1, BaseTower.TowerType.Home, "Home Base", null),
-        new TowerHelper(1, 1, BaseTower.TowerType.Projectile, "Archer", new object[]{1, 4, 0f, 0f, 10f, 2f}),
-        new TowerHelper(2, 1, BaseTower.TowerType.Projectile, "Shotgun", new object[]{8, 1, 25f, 0f, 10f, 1f})
+        new TowerHelper(1, 1, BaseTower.TowerType.Projectile, "Archer", new object[]{1, 40, 0f, 0f, 10f, 2f}),
+        new TowerHelper(2, 1, BaseTower.TowerType.Projectile, "Shotgun", new object[]{8, 10, 25f, 0f, 10f, 1f}),
+        new TowerHelper(2, 1, BaseTower.TowerType.Projectile, "Arty", new object[]{1, 100, 0f, 0f, 25f, 1f})
     };
 
     private static int[] towerProbabilities =
     {
         0,
+        1,
         1,
         1
     };
