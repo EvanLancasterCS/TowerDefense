@@ -72,11 +72,12 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\ProjectileTower.cs" />
     <Compile Include="Assets\CardUI.cs" />
+    <Compile Include="Assets\enemyBlades.cs" />
     <Compile Include="Assets\Scripts\BaseTower.cs" />
     <Compile Include="Assets\Scripts\TowerManager.cs" />
     <Compile Include="Assets\Scripts\ResourceLoader.cs" />
     <Compile Include="Assets\Scripts\HexInfo.cs" />
-    <Compile Include="Assets\enemyBlades.cs" />
+    <Compile Include="Assets\soundFX.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

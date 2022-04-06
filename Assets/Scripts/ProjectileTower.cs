@@ -12,6 +12,7 @@ using UnityEngine;
 public class ProjectileTower : BaseTower
 {
     public static int NUM_ARGS = 6;
+    private int towerIdentifier = 0;
     private int baseProjectiles = 1; // number of projectiles shot per shot
     private float baseDamage = 1; // damage per projectile
     private float baseSpread = 0; // spread of the projectiles in degrees
@@ -28,6 +29,7 @@ public class ProjectileTower : BaseTower
     public override void SetTower(Coordinate pos, int towerID, int qual, string towerName, object[] args)
     {
         base.SetTower(pos, towerID, qual, towerName, args);
+        towerIdentifier = towerID;
 
         if(args.Length != NUM_ARGS)
         {
@@ -100,6 +102,7 @@ public class ProjectileTower : BaseTower
         Projectile proj = projObj.GetComponent<Projectile>();
 
         proj.SetProjectile(target, "Enemy", 5f, 15f, GetDamage(), baseSpread);
+        soundFX.inst.playSound(towerIdentifier);
     }
 
     public float GetSpread()

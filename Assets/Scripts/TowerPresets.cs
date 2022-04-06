@@ -10,12 +10,16 @@ public static class TowerPresets
         new TowerHelper(0, 1, BaseTower.TowerType.Home, "Home Base", null),
         new TowerHelper(1, 1, BaseTower.TowerType.Projectile, "Archer", new object[]{1, 40, 0f, 0f, 10f, 2f}),
         new TowerHelper(2, 1, BaseTower.TowerType.Projectile, "Shotgun", new object[]{8, 10, 25f, 0f, 10f, 1f}),
-        new TowerHelper(2, 1, BaseTower.TowerType.Projectile, "Arty", new object[]{1, 100, 0f, 0f, 25f, 1f})
+        new TowerHelper(3, 1, BaseTower.TowerType.Projectile, "Arty", new object[]{1, 100, 0f, 0f, 25f, 1f}),
+        new TowerHelper(4, 1, BaseTower.TowerType.Projectile, "Machinegun", new object[]{1, 10, 0f, 0f, 10f, 5f}),
+        new TowerHelper(5, 1, BaseTower.TowerType.Projectile, "Burst", new object[]{3, 30, 10f, 0.1f, 10f, 1f})
     };
 
     private static int[] towerProbabilities =
     {
         0,
+        1,
+        1,
         1,
         1,
         1
