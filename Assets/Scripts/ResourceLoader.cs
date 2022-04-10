@@ -6,7 +6,8 @@ public class ResourceLoader : MonoBehaviour
 {
     public static ResourceLoader instance;
     public GameObject[] TowerModelsByID;
-    public GameObject[] EnemyModelsByID;
+    public GameObject[] EnemyPrefabByID;
+    public GameObject explosionPrefab;
 
     void Start()
     {
@@ -27,14 +28,16 @@ public class ResourceLoader : MonoBehaviour
         return TowerModelsByID[towerID];
     }
 
-    public GameObject GetEnemyModel(int enemyID)
+    public GameObject GetEnemyPrefab(int enemyID)
     {
-        if (enemyID < 0 || enemyID > EnemyModelsByID.Length)
+        if (enemyID < 0 || enemyID > EnemyPrefabByID.Length)
         {
             print("Model not found");
             return null;
         }
 
-        return EnemyModelsByID[enemyID];
+        return EnemyPrefabByID[enemyID];
     }
+
+    public GameObject GetExplosionPrefab() => explosionPrefab;
 }

@@ -62,8 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661db7cc9f73f384cbd51992bf6a21d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 60
   maxSpeed: 1.5
+  healthBarPrefab: {fileID: 4048394034489240145, guid: e8a14f1afc0877446b22b889adc05964, type: 3}
 --- !u!135 &-7737854832251452239
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -75,7 +76,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3844248664595473949
 PrefabInstance:
