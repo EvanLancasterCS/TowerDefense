@@ -15,7 +15,7 @@ public class DifficultyHelper
     [SerializeField] private bool linear = false; // choose wave choices in order instead of random
     [SerializeField] private int numTowersGiven; // preferably maxmimum is 5, but we should try to keep it low
     [SerializeField] private int[] towerProbabilities; // set of probabilities to set towerpresets
-    private System.Random rand = new System.Random(PerlinNoise.seed);
+    private System.Random rand;
     private int linearIndex = 0;
 
     public DifficultyHelper(string _name, WaveHelper[] _waveChoices, float _difficultyThreshold, bool _linear, int _numTowersGiven)
@@ -29,6 +29,9 @@ public class DifficultyHelper
 
     public WaveHelper GetWave()
     {
+        if(rand == null)
+            rand = DifficultyInfo.instance.difficultyRand;
+
         if (linear)
         {
             if (linearIndex >= waveChoices.Length)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DifficultyInfo : MonoBehaviour
 {
     public static DifficultyInfo instance;
-
+    public System.Random difficultyRand;
     public DifficultyHelper[] difficulties;
     private DifficultyHelper currentDifficulty;
     private int currentDifficultyIndex = -1;
@@ -14,6 +14,7 @@ public class DifficultyInfo : MonoBehaviour
     private void Start()
     {
         instance = this;
+        difficultyRand = new System.Random(PerlinNoise.seed);
     }
     
     // returns true if difficulty changed
