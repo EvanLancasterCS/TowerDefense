@@ -221,7 +221,10 @@ public class InputHandler : MonoBehaviour
                 {
                     bool success = TowerManager.instance.PlaceTower(new Coordinate(x, z), towerCreation);
                     if (success)
+                    {
                         UIManager.instance.DestroySelectedCard();
+                        soundFX.inst.playTowerPlacement();
+                    }
                 }
 
                 ClearAll();

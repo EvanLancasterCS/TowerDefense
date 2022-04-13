@@ -24,6 +24,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI playerScoreValText;
     [SerializeField] GameObject gameRestartButton;
     [SerializeField] FusionUIManager fusionUI;
+    [SerializeField] int currTime = 0;
     private const float difficultyContainerLength = 100;
 
     private List<CardUI> cards = new List<CardUI>();
@@ -72,9 +73,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void SetPlayerScore()
+    public void SetPlayerScore(int score)
     {
-        playerScoreValText.text = ScoreTracker.inst.getScore().ToString();
+        playerScoreValText.text = score.ToString();
     }
 
     
@@ -100,7 +101,8 @@ public class UIManager : MonoBehaviour
     public void UpdateBuildTime(float time)
     {
         time = Mathf.RoundToInt(time);
-        infoText.text = "Time Left: <size=24><b>" + time + "</b></size> seconds.";
+        currTime = (int)time;
+        infoText.text = "Time Left: " + time + " seconds.";
     }
 
     public void EndBuild()
@@ -109,6 +111,7 @@ public class UIManager : MonoBehaviour
         endBuildButton.SetActive(false);
         infoText.text = "";
         HideRangeIndicator();
+        ScoreTracker.inst.addToScore(currTime);
     }
 
     public void SetPassageErrorText(bool set)

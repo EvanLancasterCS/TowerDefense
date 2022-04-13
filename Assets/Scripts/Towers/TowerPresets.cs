@@ -40,9 +40,10 @@ using UnityEngine;
 
 public static class TowerPresets
 {
-    // [0] -> home base. [1] -> archer.       [2] -> shotgun.      [3] -> arty.          [4] -> machine gun.
-    // [5] -> burst.     [6] -> rock.         [7] -> sharpshooter. [8] -> blazer.        [9] -> marksman.
-    // [10] -> auto-mg.  [11] -> power-burst. [12] ->              [13] ->               [14] ->
+    // [0] -> home base. 
+    // [1] -> archer.       [2] -> shotgun.         [3] -> arty.            [4] -> machine gun.      [5] -> burst.           [6] -> rock.
+    // [7] -> sharpshooter. [8] -> blazer.          [9] -> marksman.        [10] -> auto-mg.        [11] -> power-burst.
+    //  [12] -> Blast Archer [13] -> Pump Shotgun   [14] -> Modular Arty    [15] -> Enhanced-MG     [16] -> Precision Burst
     public const int NUM_PRESETS = 12;
     private static TowerHelper[] presets =
     {

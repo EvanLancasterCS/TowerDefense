@@ -16,6 +16,7 @@ public class soundFX : MonoBehaviour
     public AudioClip crash;
     public AudioClip towerHit;
     public AudioClip enemyNoise;
+    public AudioClip towerPlace;
     AudioSource audiSource;
 
     public static soundFX inst;
@@ -50,21 +51,33 @@ public class soundFX : MonoBehaviour
     {
         // beginning implementation for SFX management 
         // so later game it doesn't sound like a jumbled mess
+        
+
         switch (soundID)
         {
             case 1:
+            case 7:
+            case 12:
                 audiSource.PlayOneShot(clip1);
                 break;
             case 2:
+            case 8:
+            case 13:
                 audiSource.PlayOneShot(clip2);
                 break;
             case 3:
+            case 9:
+            case 14:
                 audiSource.PlayOneShot(clip3);
                 break;
             case 4:
+            case 10:
+            case 15:
                 audiSource.PlayOneShot(clip4);
                 break;
             case 5:
+            case 11:
+            case 16:
                 audiSource.PlayOneShot(clip5);
                 break;
         }
@@ -88,5 +101,10 @@ public class soundFX : MonoBehaviour
     public void playEnemyNoise()
     {
         audiSource.PlayOneShot(enemyNoise);
+    }
+
+    public void playTowerPlacement()
+    {
+        audiSource.PlayOneShot(towerPlace);
     }
 }

@@ -231,7 +231,6 @@ public class Enemy : MonoBehaviour
         {
             Die();
             ScoreTracker.inst.addToScore(10);
-            UIManager.instance.SetPlayerScore();
         }
 
         myHealthBar.Show();

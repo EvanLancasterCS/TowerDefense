@@ -128,7 +128,7 @@ public class ProjectileTower : BaseTower
             proj.SetProjectile(target, "Enemy", 5f, 30f, GetDamage(), GetSpread());
             foreach (ProjectileEffect e in projectileEffects)
                 proj.AttachEffect(e);
-
+            
             soundFX.inst.playSound(id);
         }
         
