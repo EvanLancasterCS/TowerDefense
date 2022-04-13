@@ -13,6 +13,9 @@ public class soundFX : MonoBehaviour
     public AudioClip clip3;
     public AudioClip clip4;
     public AudioClip clip5;
+    public AudioClip crash;
+    public AudioClip towerHit;
+    public AudioClip enemyNoise;
     AudioSource audiSource;
 
     public static soundFX inst;
@@ -70,5 +73,20 @@ public class soundFX : MonoBehaviour
         //yield return new WaitForSeconds(audiobuffer);
         yield return null;
         numAudioPlaying -= 1;
+    }
+
+    public void playCrashLanding()
+    {
+        audiSource.PlayOneShot(crash);
+    }
+
+    public void playerTowerTakeDamage()
+    {
+        audiSource.PlayOneShot(towerHit);
+    }
+
+    public void playEnemyNoise()
+    {
+        audiSource.PlayOneShot(enemyNoise);
     }
 }

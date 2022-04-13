@@ -228,7 +228,11 @@ public class Enemy : MonoBehaviour
     {
         currentHealth -= amt;
         if (currentHealth <= 0)
+        {
             Die();
+            ScoreTracker.inst.addToScore(10);
+            UIManager.instance.SetPlayerScore();
+        }
 
         myHealthBar.Show();
         myHealthBar.SetPercentage(currentHealth / (float)maxHealth);

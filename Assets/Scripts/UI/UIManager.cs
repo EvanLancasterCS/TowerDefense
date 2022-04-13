@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject passageErrorText;
     [SerializeField] GameObject rangeIndicator;
     [SerializeField] TextMeshProUGUI playerHealthText;
+    [SerializeField] TextMeshProUGUI playerScoreValText;
     [SerializeField] GameObject gameRestartButton;
     [SerializeField] FusionUIManager fusionUI;
     private const float difficultyContainerLength = 100;
@@ -64,8 +65,19 @@ public class UIManager : MonoBehaviour
         playerHealthText.text = num.ToString();
 
         if (num <= 0)
-            gameRestartButton.SetActive(true);
+        {
+            StartCoroutine(SceneSwitchEnd());
+            //gameRestartButton.SetActive(true);
+
+        }
     }
+
+    public void SetPlayerScore()
+    {
+        playerScoreValText.text = ScoreTracker.inst.getScore().ToString();
+    }
+
+    
 
     public void ShowRangeIndicator(Vector3 pos, float radius)
     {
@@ -436,4 +448,12 @@ public class UIManager : MonoBehaviour
             }
         }
     }
+
+    IEnumerator SceneSwitchEnd()
+    {
+        SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
+        yield return null;
+        SceneManager.UnloadSceneAsync("MainScene");
+    }
+
 }

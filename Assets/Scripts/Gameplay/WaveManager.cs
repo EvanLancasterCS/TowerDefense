@@ -58,6 +58,7 @@ public class WaveManager : MonoBehaviour
     {
         playerHealth -= amt;
         UIManager.instance.SetPlayerHealth(playerHealth);
+        soundFX.inst.playerTowerTakeDamage();
         if(playerHealth <= 0)
         {
             playingGame = false;
@@ -171,6 +172,7 @@ public class WaveManager : MonoBehaviour
             List<int> usedDirs = waveHelper.UsedDirs();
 
             float animationTime = 3f;
+            soundFX.inst.playCrashLanding();
             for (int i = 0; i < usedDirs.Count; i++)
             {
                 GameObject newShip = Instantiate(spawnShipPrefab);
@@ -184,6 +186,7 @@ public class WaveManager : MonoBehaviour
 
             yield return new WaitForSeconds(animationTime);
 
+            soundFX.inst.playEnemyNoise();
             // spawn enemies.
             float disbursementTime = waveHelper.GetDisbursementTime(); // time between each enemy spawn
             List<int> enemyIDs = new List<int>();
