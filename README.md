@@ -2,7 +2,7 @@
 
 See the full build at https://evanlancaster.itch.io/hexgen-ultra
 
-Made in about a week; features 
+Made in 1-2 weeks; features 
 - a randomly generated map,
 - custom A* pathfinding implementation,
 - some basic music and sounds (from my project partner),
